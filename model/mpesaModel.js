@@ -66,7 +66,7 @@ exports.stkPush = (req, res) => {
     "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMTYwMjE2MTY1NjI3",
     "Timestamp": "20160216165627",
     "TransactionType": "CustomerPayBillOnline",
-    "Amount": `1`,
+    "Amount": `${amount}`,
     "PartyA": `254${phone}`,
     "PartyB": "174379",
     "PhoneNumber": `254${phone}`,
