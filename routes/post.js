@@ -1,6 +1,5 @@
 const router=require("express").Router();
  const Post=require("../model/post");
-// const { verifyTokeAndAdmin,verifyTokenAndAuthorization } = require("./verification");
 
  router.post("/new", async(req,res)=>{
 const newPost=new Post({
