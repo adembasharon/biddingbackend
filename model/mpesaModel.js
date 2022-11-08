@@ -72,7 +72,7 @@ exports.stkPush = (req, res) => {
     "PhoneNumber": `254${phone}`,
     "CallBackURL": "https://mydomain.com/path",
     "AccountReference": `254${phone}`,
-    "TransactionDesc": "Test"
+    "TransactionDesc": "BidNunua"
   };
 
   axios.post(stkURL, data, { headers: headers })
@@ -80,7 +80,6 @@ exports.stkPush = (req, res) => {
     .catch(error => console.log(error))
 
 console.log(data)
-  // res.send(token)
 
 
 
