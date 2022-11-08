@@ -49,7 +49,7 @@ exports.mpesaPassword = (req, res) => {
 exports.stkPush = (req, res) => {
   const token = req.token;
 
-  const phone = req.body.phone;
+  const phone = req.body.phone.substring(1);
   const amount = req.body.amount;
 
   console.log(phone, amount)
