@@ -9,6 +9,7 @@ subimages:{type:Array,required:true},
 currentdate:{type:String,required:true},
 endingdate:{type:String,required:true},
 startingPrice:{type:Number,required:true},
+bids:{type:Array},
 },
 {timestamps:true})
 

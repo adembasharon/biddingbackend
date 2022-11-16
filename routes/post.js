@@ -11,8 +11,8 @@ name:req.body.name,
 subimages:req.body.subimages,
 currentdate:req.body.currentdate,
 endingdate:req.body.endingdate,
-startingPrice:req.body.startingPrice
-
+startingPrice:req.body.startingPrice,
+bids:req.body.bids
 
 })
 console.log(newPost)
