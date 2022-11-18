@@ -20,9 +20,15 @@ mongoose.connect(process.env.MONGO_URL)
 console.log(err)
 })
 
-const corsOption={
-    origin:"*",
+// const corsOption={
+//     origin:"*",
+// }
+
+const corsOptions = {
+    "Access-Control-Allow-Origin": "*"
 }
+
+
 app.use(express.json());
 app.use(cors())
 app.use("/api",mpesaRoutes)
