@@ -10,6 +10,7 @@ const jwt=require("jsonwebtoken")
     const newUser=new Auth({
       username:req.body.username,
       email:req.body.email,
+      phone:req.body.phone,
       password:await bcrypt.hash(req.body.password,salt)
   })
 

@@ -20,9 +20,7 @@ mongoose.connect(process.env.MONGO_URL)
 console.log(err)
 })
 
-// const corsOption={
-//     origin:"*",
-// }
+
 
 const corsOptions = {
     "Access-Control-Allow-Origin": "*"
