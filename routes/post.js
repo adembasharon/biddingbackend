@@ -12,7 +12,8 @@ subimages:req.body.subimages,
 currentdate:req.body.currentdate,
 endingdate:req.body.endingdate,
 startingPrice:req.body.startingPrice,
-bids:req.body.bids
+bids:req.body.bids,
+item:req.body.item
 
 })
 console.log(newPost)
