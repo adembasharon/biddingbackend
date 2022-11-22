@@ -10,7 +10,7 @@ currentdate:{type:String,required:true},
 endingdate:{type:String,required:true},
 startingPrice:{type:Number,required:true},
 bids:{type:Array},
-item:{type:Array},
+user:{type:String},
 
 },
 {timestamps:true})

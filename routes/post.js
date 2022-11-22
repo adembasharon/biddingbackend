@@ -13,7 +13,7 @@ currentdate:req.body.currentdate,
 endingdate:req.body.endingdate,
 startingPrice:req.body.startingPrice,
 bids:req.body.bids,
-item:req.body.item
+user:req.body.user
 
 })
 console.log(newPost)
