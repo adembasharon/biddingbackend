@@ -23,7 +23,8 @@ console.log(err)
 
 
 const corsOptions = {
-    "Access-Control-Allow-Origin": "*"
+    "Access-Control-Allow-Origin": "https://biddingbackend.onrender.com",
+    "Access-Control-Allow-Methods":"*"
 }
 
 // ttttt
