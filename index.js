@@ -23,13 +23,14 @@ console.log(err)
 
 
 const corsOptions = {
-    "Access-Control-Allow-Origin": "https://biddingbackend.onrender.com",
+    "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods":"*"
 }
 
-// ttttt
 app.use(express.json());
-app.use(cors(corsOptions))
+app.use(cors({
+    origin:"*"
+}))
 app.use("/api",mpesaRoutes)
 app.use("/api/auth",authRoutes)
 app.use("/api/post",postRoutes)
