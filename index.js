@@ -23,14 +23,15 @@ console.log(err)
 
 
 const corsOptions = {
-    "Access-Control-Allow-Origin": "*",
-    "Access-Control-Allow-Methods":"*"
+    origin: '*',
+    credentials: true,
+    methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
+    allowedHeaders: ['Content-Type'],
+    exposedHeaders: ['Content-Type']
 }
 
 app.use(express.json());
-app.use(cors({
-    origin:"*"
-}))
+app.use(cors(corsOptions))
 app.use("/api",mpesaRoutes)
 app.use("/api/auth",authRoutes)
 app.use("/api/post",postRoutes)
