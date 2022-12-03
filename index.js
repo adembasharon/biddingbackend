@@ -23,7 +23,7 @@ console.log(err)
 
 
 const corsOptions = {
-    origin: '*',
+    origin:"127.0.0.1:3000",
     credentials: true,
     methods: ['GET','POST','HEAD','PUT','PATCH','DELETE'],
     allowedHeaders: ['Content-Type'],
